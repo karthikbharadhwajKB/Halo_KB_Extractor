@@ -7,12 +7,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Configuration
-API_BASE_URL = os.getenv("HALO_API_BASE_URL")
-AUTH_ENDPOINT = os.getenv("HALO_AUTH_ENDPOINT")
-KB_ENDPOINT = os.getenv("HALO_KB_ENDPOINT")
+BASE_URL = os.getenv("HALO_BASE_URL", "https://crm.hivedome.net")
+API_BASE_URL = os.getenv("HALO_API_BASE_URL", "https://crm.hivedome.net/api")
+AUTH_ENDPOINT = os.getenv("HALO_AUTH_ENDPOINT", "/auth/token")
+KB_ENDPOINT = os.getenv("HALO_KB_ENDPOINT", "/KBArticle")
 
 # Authentication 
-USERNAME = os.getenv("HALO_USER_NAME")
+CLIENT_ID = os.getenv("CLIENT_ID")
+USERNAME = os.getenv("HALO_USERNAME")
 PASSWORD = os.getenv("HALO_PASSWORD") 
 
 # Output Configuration 
