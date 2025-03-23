@@ -37,6 +37,7 @@ class KBExtractor:
                 f.write(extracted_data["description"])
             if extracted_data['resolution']:
                 f.write(extracted_data["resolution"])
+        print(f"Article {article_id} saved to {filepath}")
         
     def _sanitize_filename(self, filename: str) -> str:
         invalid_chars = '<>:"/\\|?*' 
