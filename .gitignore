@@ -345,3 +345,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+#output files
+documents/
